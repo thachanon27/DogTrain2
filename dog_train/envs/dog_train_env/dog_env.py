@@ -2,7 +2,7 @@ from gym import Env
 from gym.spaces import Box, Discrete
 import random
 
-class DogEnv(Env):
+class DogEnv(gym.Env):
 
     def __init__(self):
         # dog runs from 0 to 50, returns from 50 to 0

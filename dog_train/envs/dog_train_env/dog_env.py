@@ -1,6 +1,18 @@
-from gym import Env
 from gym.spaces import Box, Discrete
 import random
+
+import math
+from typing import Optional, Union
+
+import numpy as np
+import pygame
+from pygame import gfxdraw
+
+import gym
+from gym import spaces, logger
+from gym.utils import seeding
+
+
 
 class DogEnv(gym.Env):
 
